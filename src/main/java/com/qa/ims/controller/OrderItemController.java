@@ -44,7 +44,7 @@ public class OrderItemController implements CrudController<OrderItem> {
 		LOGGER.info("Please enter the quantity");
 		Long quantity = utils.getLong();
 		OrderItem orderOrderItem = orderOrderItemDAO.create(new OrderItem(order_id, item_id, quantity));
-		LOGGER.info("OrderItem created");
+		LOGGER.info("Order item created");
 		return orderOrderItem;
 	}
 
@@ -61,7 +61,7 @@ public class OrderItemController implements CrudController<OrderItem> {
 		LOGGER.info("Please enter the quantity");
 		Long quantity = utils.getLong();
 		OrderItem orderOrderItem = orderOrderItemDAO.update(new OrderItem(id,order_id, item_id, quantity));
-		LOGGER.info("OrderItem Updated");
+		LOGGER.info("Order item Updated");
 		return orderOrderItem;
 	}
 
