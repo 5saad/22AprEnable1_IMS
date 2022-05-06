@@ -1,68 +1,60 @@
-Coverage: 34%
-# Project Title
+Coverage: 70.5%
+# Inventory Management System (IMS)
 
-One Paragraph of project description goes here
+This is an application, used via a command line, that allows the user to store and manage customer information, items and customer orders. It allows the user to create, read, update and delete the information stored on the database.
 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
-### Prerequisites
+###
 
 What things you need to install the software and how to install them
 
 ```
-Give examples
+You will need: Java version 1.8 or higher, the latest mySQL version 8.0.19 or higher. It is also recommended you have git bash terminal to run the application.
 ```
 
-### Installing
+### Installing and Deployment
 
-A step by step series of examples that tell you how to get a development env running
+A step by step to get a application running running
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
+Steps:
 
 ```
-until finished
+1) Fork this repository 
+2) pull it to your local machine.
+3) In your local file enter the folder named "target"
+4) Right click to Git Bash here.
+5) To run the application type "java -jar ims-0.1.0-jar-with-dependencies.jar"
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+To use the application:
+
+```
+Simply write what menu you want to go into and press enter. Then you can writ what you wnat to do with this item e.g create, read, update or delete (CRUD).
+
+You can write "return" to go back to the main menu
+
+In the main menu write "stop" to stop the aplication.
+```
+
+Exampel 1: CUSTOMER > CREATE > John > Doe
+Example 2: CUSTOMER > READ, This will then show "id: 1, First name: John, Surname: Doe
 
 ## Running the tests
 
 Explain how to run the automated tests for this system. Break down into which tests and what they do
 
-### Unit Tests 
-
-Explain what these tests test, why and how to run them
-
-```
-Give an example
-```
-
-### Integration Tests 
-Explain what these tests test, why and how to run them
+### Tests 
+Tests that this application went through
 
 ```
-Give an example
+JUNIT tests were taken with a coverage of 70.5% to ensure that the CRUD methods were working correctly. 
+Mockito was also used to mock the DAO and utils classe, so that they could be tested in isolation.
+Manual tests were also made in the eclipse console as well as the fat .jar application
 ```
 
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
 
 ## Built With
 
@@ -70,7 +62,7 @@ Add additional notes about how to deploy this on a live system
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning.
+Version 0.1.0.
 
 ## Authors
 
@@ -84,6 +76,9 @@ This project is licensed under the MIT license - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* QA courseware
+* Richard Mansworth
+* Cameron Guthrie
+* Chris Perrins
+* Stackoverflow
+* W3schools
