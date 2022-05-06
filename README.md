@@ -82,3 +82,6 @@ This project is licensed under the MIT license - see the [LICENSE.md](LICENSE.md
 * Chris Perrins
 * Stackoverflow
 * W3schools
+
+## Link to Jira 
+https://saad98.atlassian.net/jira/software/projects/IMS/boards/3
